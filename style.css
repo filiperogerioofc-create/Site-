@@ -1,0 +1,428 @@
+/* Variáveis de Cores Clean Mode */
+:root {
+    --primary-color: #007acc;
+    --text-dark: #1f2937;
+    --text-light: #4b5563;
+    --bg-light: #f3f4f6;
+    --bg-white: #ffffff;
+    --border-color: #e5e7eb;
+    
+    /* Cores do Bloco de Código Integrado */
+    --code-bg: #1e1e1e;
+    --keyword: #569cd6;
+    --string: #ce9178;
+    --number: #b5cea8;
+    --var: #9cdcfe;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+/* Navbar Superior (Clean & Professional) */
+.navbar {
+    background-color: var(--bg-white);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 20px;
+    color: var(--primary-color);
+    font-family: 'Consolas', monospace;
+}
+
+nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 600;
+    font-size: 15px;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+}
+
+/* Link Ativo do Menu */
+nav a.active {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 4px;
+}
+
+/* Seção Hero (Sobre Mim, Centralizada) */
+.hero-section {
+    background-color: var(--bg-white);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+    align-items: center;
+}
+
+/* Foto Hero de Perfil Grande e Impactante */
+.profile-avatar-big {
+    width: 100%;
+    max-width: 380px;
+    height: 380px;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    background-color: #e5e7eb;
+    display: block;
+    margin: 0 auto;
+}
+
+.hero-text-area {
+    text-align: left;
+}
+
+.hero-text-area h1 {
+    font-size: 42px;
+    margin: 10px 0;
+    font-weight: 800;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #eff6ff;
+    color: var(--primary-color);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.bio {
+    font-size: 16px;
+    color: var(--text-light);
+    margin-bottom: 15px;
+}
+
+.location {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-light);
+    margin-bottom: 20px;
+}
+
+/* Bloco de Código Estilizado Internamente */
+.code-box {
+    background-color: var(--code-bg);
+    color: #d4d4d4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow-x: auto;
+}
+
+.code-box pre {
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 14px;
+}
+
+.keyword { color: var(--keyword); }
+.string { color: var(--string); }
+.number { color: var(--number); }
+.variable { color: var(--var); }
+
+/* Seção de Vídeos */
+.videos-section {
+    background-color: var(--bg-light);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--text-light);
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+.video-alert {
+    background-color: #fef3c7;
+    border-left: 5px solid #f59e0b;
+    color: #78350f;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.videos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 30px;
+}
+
+.video-card {
+    background-color: var(--bg-white);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+}
+
+/* Container Responsivo do Vídeo (YouTube) */
+.video-container {
+    background-color: #e5e7eb;
+    height: 200px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-light);
+    margin-bottom: 15px;
+}
+
+/* Foto da Capa de Vídeos Grande e Profissional */
+.thumb-container {
+    width: 100%;
+    height: 200px;
+    background-color: #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.video-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-card h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.video-card p {
+    color: var(--text-light);
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* Seção Galeria (Fotos dos Amigos Grandes e Alinhadas) */
+.gallery-section {
+    background-color: var(--bg-white);
+    border-top: 1px solid var(--border-color);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.gallery-card {
+    background-color: var(--bg-light);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+    border: 1px solid var(--border-color);
+}
+
+.gallery-img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    background-color: #d1d5db;
+    display: block;
+}
+
+.gallery-info {
+    padding: 15px;
+    background-color: var(--bg-white);
+    text-align: center;
+}
+
+/* Seção Parcerias & Patrocínio */
+.sponsor-section {
+    background-color: var(--bg-white);
+    border-top: 1px solid var(--border-color);
+}
+
+.sponsor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+    align-items: center;
+}
+
+.sponsor-badge {
+    background-color: #fef2f2;
+    color: #ef4444;
+}
+
+.sponsor-text-area h2 {
+    font-size: 36px;
+    font-weight: 800;
+    margin: 10px 0;
+}
+
+.sponsor-bio {
+    font-size: 16px;
+    color: var(--text-light);
+    margin-bottom: 25px;
+}
+
+/* Foto Hero para Publi (Profissional para fechar negócio) */
+.sponsor-avatar-big {
+    width: 100%;
+    max-width: 380px;
+    height: 380px;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    background-color: #e5e7eb;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Seção Comunidade (Formulários Centralizados) */
+.community-section {
+    background-color: var(--bg-light);
+    border-top: 1px solid var(--border-color);
+}
+
+.forms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.form-card {
+    background-color: var(--bg-white);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+}
+
+.form-card.comercial {
+    border-top: 4px solid var(--primary-color);
+}
+
+.form-card h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.form-card p {
+    font-size: 14px;
+    color: var(--text-light);
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 15px;
+    outline: none;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(0, 122, 204, 0.1);
+}
+
+.btn-submit {
+    background-color: #10b981;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-submit:hover {
+    background-color: #059669;
+}
+
+.btn-business {
+    background-color: var(--primary-color);
+}
+
+.btn-business:hover {
+    background-color: #0062a3;
+}
+
+/* Footer Uniforme */
+.site-footer {
+    background-color: #111827;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 14px;
+}
+
+.footer-tech {
+    color: #38bdf8;
+    font-family: 'Consolas', monospace;
+    margin-top: 12px;
+    font-size: 13px;
+}
